@@ -366,8 +366,8 @@ footer h3{color:var(--text);font-size:16px;margin-bottom:10px}
         minutes put it at <b>30 days after the event</b>, spendable at onboarded merchants (look for
         the decal) and not exchangeable for cash.</p>
       <p style="color:#e7d9c2;font-size:13px;border-left:3px solid var(--warn);padding-left:12px">
-        <b>Sources conflict:</b> the INVADE deck\u2019s voucher terms say it is valid for one-time use
-        <em>during the event period</em> only. Not yet reconciled \u2014 see Open items.</p>
+        <b>Sources conflict:</b> the INVADE deck’s voucher terms say it is valid for one-time use
+        <em>during the event period</em> only. Not yet reconciled — see Open items.</p>
     </div>
   </div>
 </div></section>
@@ -840,7 +840,7 @@ renderGantt();
     var card = el('div',{class:'zcard',style:'--zc:'+z.colour});
     card.appendChild(el('h3',{html:z.icon+' '+z.name}));
     card.appendChild(el('div',{class:'zb',text:z.blurb}));
-    card.appendChild(el('div',{class:'zmeta',text:vs.length+' participants \u00b7 '+z.evidence}));
+    card.appendChild(el('div',{class:'zmeta',text:vs.length+(vs.length===1?' participant \u00b7 ':' participants \u00b7 ')+z.evidence}));
     var list = el('div',{class:'zlist'});
     vs.forEach(function(v){
       var p = el('button',{class:'pill',text:v.name+(v.hero?' \u2605':''),
